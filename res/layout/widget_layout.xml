@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="335dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/widget_textview_corner" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="94dp"
+        android:layout_height="63dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="@dimen/widget_sign_top"
+        android:background="@drawable/widget_donote" />
+
+    <RelativeLayout
+        android:id="@+id/widget_back_title"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="14dp"
+        android:background="#E5E5E5" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/text_title"
+            android:text="  标题:"
+            android:textColor="#666666"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="4dp"
+            android:text="title"
+            android:textColor="#af000000"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/widget_back_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/widget_back_title"
+        android:layout_marginTop="4dp"
+        android:background="#E5E5E5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_body"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/widget_body_height"
+            android:padding="7dp"
+            android:text="请点击中部按钮选择笔记"
+            android:textColor="#af000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/widget_back_content" >
+
+        <ImageButton
+            android:id="@+id/btn_prior"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/widget_prior"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/textview_button" />
+
+        <ImageButton
+            android:id="@+id/widget_act"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignTop="@+id/btn_prior"
+            android:src="@drawable/widget_home"
+            android:scaleType="centerInside"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/textview_button" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/widget_next"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/textview_button" />
+    </RelativeLayout>
+
+</RelativeLayout>

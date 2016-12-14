@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:background="#ff404E4D"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/menu_picture"
+        android:layout_width="130dp"
+        android:paddingLeft="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/ic_picture2"
+        android:scaleType="centerInside"
+        android:text="@string/image"
+        android:textColor="#fffffafa"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#ffC2CBCB" />
+
+    <Button
+        android:id="@+id/menu_voice"
+        android:layout_width="130dp"
+        android:paddingLeft="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/ic_voice2"
+        android:scaleType="centerInside"
+        android:text="@string/speech"
+        android:textColor="#fffffafa"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#ffC2CBCB" />
+
+    <Button
+        android:id="@+id/menu_rec"
+        android:layout_width="130dp"
+        android:paddingLeft="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/ic_record2"
+        android:scaleType="centerInside"
+        android:text="@string/record"
+        android:textColor="#fffffafa"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#ffC2CBCB" />
+
+    <Button
+        android:id="@+id/menu_movie"
+        android:layout_width="130dp"
+        android:paddingLeft="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/ic_camera2"
+        android:scaleType="centerInside"
+        android:text="@string/video"
+        android:textColor="#fffffafa"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#ffC2CBCB" />
+
+    <Button
+        android:id="@+id/menu_addition"
+        android:layout_width="130dp"
+        android:paddingLeft="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/ic_addtition2"
+        android:scaleType="centerInside"
+        android:text="@string/accessory"
+        android:textColor="#fffffafa" 
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#ffC2CBCB" />
+
+    <Button
+        android:id="@+id/menu_draw"
+        android:layout_width="130dp"
+        android:paddingLeft="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/ic_draw2"
+        android:scaleType="centerInside"
+        android:text="@string/draw"
+        android:textColor="#fffffafa"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#ffC2CBCB" />
+
+    <Button
+        android:id="@+id/menu_sent"
+        android:layout_width="130dp"
+        android:paddingLeft="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#7f404E4D"
+        android:drawableLeft="@drawable/ic_send2"
+        android:scaleType="centerInside"
+        android:text="@string/menu_send"
+        android:textColor="#fffffafa"
+        android:textSize="18sp" />
+
+</LinearLayout>

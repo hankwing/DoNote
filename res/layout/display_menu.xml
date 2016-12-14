@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:background="#ff404E4D"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/menu_lock_or_unlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/menu_lock"
+        android:background="#00000000"
+        android:text="@string/lock"
+        android:textColor="#fffffafa"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#ffC2CBCB" />
+
+    <Button
+        android:id="@+id/menu_moveto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/menu_moveto"
+        android:background="#00000000"
+        android:text="@string/move"
+        android:textColor="#fffffafa"
+        android:textSize="18sp" />
+
+   <TextView
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#ffC2CBCB" />
+    <Button
+        android:id="@+id/menu_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/menu_alarm_manager"
+        android:gravity="center"
+        android:text="@string/manage"
+        android:textColor="#fffffafa"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#ffC2CBCB" />
+
+    <Button
+        android:id="@+id/menu_listen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:background="#00000000"
+       android:layout_gravity="center"
+        android:drawableLeft="@drawable/menu_read"
+        android:text="@string/read"
+        android:textColor="#fffffafa"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#ffC2CBCB" />
+
+    <Button
+        android:id="@+id/menu_sendtodesk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/menu_send"
+        android:gravity="center"
+        android:text="@string/send"
+        android:textColor="#fffffafa"
+        android:textSize="18sp" />
+
+</LinearLayout>

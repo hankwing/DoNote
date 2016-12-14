@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alarm_confirmandcancle"
+    android:layout_width="fill_parent"
+    android:background="#7f404E4D"
+    android:layout_height="35dp"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/alarm_batch_cancle"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+       android:background="@drawable/popupwindow_button"
+        android:text="@string/cancel_alarm"
+        android:textColor="#fffafa"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/alarm_return"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/popupwindow_button"
+        android:text="@string/return_to_mainview"
+        android:textColor="#fffafa"
+        android:textSize="18sp" />
+    </LinearLayout>

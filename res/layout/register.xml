@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.donote.util.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_register_fields"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="5.0dp"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/register_logo"  
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/login_logo"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+        <TextView
+            
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/app_name"  
+	        android:layout_marginLeft="20dp"
+	        android:layout_centerInParent="true"
+	        android:textColor="#ff76BBD8"
+	        android:textSize="@dimen/login_logoText" />
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/login_button_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_button"	
+        android:focusable="true"  
+   		android:focusableInTouchMode="true"
+        android:background="@drawable/login_input_account_bg"
+        android:gravity="center_vertical" 
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/register_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:hint="@string/donote_account"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/login_button_text" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/common_login_sub_fields"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+
+        <LinearLayout
+            android:id="@+id/common_login_sub_sub_fields_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/register_button_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_button"	
+                android:background="@drawable/login_input_password_bg_2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/register_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:ems="10"
+                    android:gravity="left|center"
+                    android:hint="@string/password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/login_button_text" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/retype_button_view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_button"	
+                android:background="@drawable/login_input_password_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/register_retype_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:ems="10"
+                    android:gravity="left|center"
+                    android:hint="@string/password_again"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/login_button_text" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register"
+                style="@style/login_button"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_button_2"
+                android:layout_marginTop="6.0dip"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="@string/register"
+                 android:textColor="#fffafa"
+                android:textSize="@dimen/login_button_text" />
+            
+            <Button
+                android:id="@+id/return_to_mainview"
+                style="@style/login_button"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_button_2"
+                android:layout_marginTop="6.0dip"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="@string/return_to_mainview"
+                 android:textColor="#fffafa"
+                android:textSize="@dimen/login_button_text" />
+        </LinearLayout>
+    </FrameLayout>
+
+</com.donote.util.ResizeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/draw_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <com.donote.util.Scrawl
+        android:id="@+id/scrawl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/linearLayout1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#7f404E4D"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:id="@+id/draw_color"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/popupwindow_button"
+            android:text="@string/choose_color"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/draw_save"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/popupwindow_button"
+            android:text="@string/save"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/draw_back"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/popupwindow_button"
+            android:text="@string/undo"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/draw_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/popupwindow_button"
+            android:text="@string/clear"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".NoteSet" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#ff76BBD8" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:src="@drawable/ic_add"
+            android:text="@string/logo_setting"
+            android:textColor="#fffffafa"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffC2CBCB"
+        android:paddingLeft="20dp"
+        android:text="@string/shake_enable"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="18dp"
+            android:text="@string/shake_enable_rewrite"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/set_shake"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffC2CBCB" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="18dp"
+            android:text="@string/shake_to_add"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/set_shake_boot"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffC2CBCB" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center|left"
+        android:paddingLeft="18dp"
+        android:text="@string/shake_sensitivity"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/shake_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:progress="10" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffC2CBCB"
+        android:paddingLeft="20dp"
+        android:paddingTop="2dp"
+        android:text="@string/set_tip1"
+        android:textSize="22sp" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffC2CBCB"
+        android:paddingLeft="20dp"
+        android:paddingTop="2dp"
+        android:text="@string/set_tip2"
+        android:textSize="22sp" />
+
+    <ListView
+        android:id="@+id/list2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</TableLayout>

@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/com/donote/activity/LoginActivity.java=UTF-8
+encoding//src/com/donote/util/BaiduAccessTokenKeeper.java=UTF-8
+encoding//src/com/donote/util/ConstantS.java=UTF-8
+encoding//src/com/donote/util/Expressions.java=UTF-8
+encoding//src/com/donote/util/SinaOauth2.java=UTF-8
+encoding//src/com/donote/util/UsersAPI.java=UTF-8
+encoding//src/com/donote/util/WeiboAPI.java=UTF-8
+encoding/<project>=GBK

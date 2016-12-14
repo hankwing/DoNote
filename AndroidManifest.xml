@@ -1,0 +1,280 @@
+<?xml version="1.1" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wxl.donote"
+    android:installLocation="auto"
+    android:versionCode="16"
+    android:versionName="2.3.3" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+
+    <uess-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ThemeActivity" >
+        <activity
+            android:name="com.donote.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="alarm_dialog" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.donote.activity.MainActivity"
+            android:launchMode="singleTask" >
+            <intent-filter android:label="@string/share" >
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.donote.activity.Login"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.LoginActivity"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.donote.freestyle.NoteStyle"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.FreeEdit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name="com.donote.activity.TableEdit" >
+        </activity>
+        <activity
+            android:name="com.donote.freestyle.GraphText"
+            android:theme="@style/myDialogTheme" >
+        </activity>
+        <activity
+            android:name="com.donote.freestyle.DefineShape"
+            android:screenOrientation="portrait"
+            android:theme="@style/myDialogTheme" >
+        </activity>
+        <activity android:name="com.donote.activity.MainBackground" >
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.Authorize" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.TableText"
+            android:theme="@style/myDialogTheme" >
+        </activity>
+        <activity
+            android:name="com.donote.freestyle.DefineMenu"
+            android:theme="@style/myDialogTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.CommonEdit"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.DisplayContent"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.NoteSet"
+            android:label="@string/title_activity_setting"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.donote.imagehandler.ImageHandle"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.GuideView"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.NoteSearch"
+            android:label="@string/search_activity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.NoteRecord"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.donote.alarm.ListTimePicker"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.NotePhoto"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.donote.alarm.AlarmDialog"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.donote.alarm.AlarmSet"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.DetectAlarmManager"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.donote.alarm.ContentTimePicker"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.Draw"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.PlayMusic"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="com.donote.filebrowser.FileView" >
+        </activity>
+        <activity
+            android:name="com.donote.activity.ShowFileInfo"
+            android:launchMode="singleTask"
+            android:theme="@style/myDialogTheme" >
+        </activity>
+        <activity android:name="com.donote.alarm.AlarmSound" >
+        </activity>
+        
+        <activity android:name="com.donote.activity.Register" 
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+        <receiver android:name="com.donote.alarm.AlarmReceiver" >
+        </receiver>
+
+        <service android:name="com.donote.activity.NotifyService" >
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+
+            <!--
+          		<intent-filter>
+				<action android:name="com.baidu.location.service_v2.9"></action>
+			</intent-filter>
+            -->
+        </service>
+        <service  
+            android:name="com.donote.util.MyShakeBootService"
+            android:enabled="true" >
+        </service>
+        
+        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="Baidu Market" />
+		<!-- 您从百度网站获取的APP KEY -->
+		<meta-data android:name="BaiduMobAd_STAT_ID" android:value="164d6a5f61" />
+		<!-- 是否开启错误日志统计，默认为false -->
+		<meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="false" />
+		<!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+		<meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="APP_START" />
+		<!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔。取值为1-24的整数，默认为1 -->
+		<!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+		<!-- 日志仅在wifi网络下发送，默认为false -->
+		<meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="false" />
+        <receiver 
+            android:name="com.donote.widget.DoNoteWidgetProvider"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="com.donote.action.widget.click"/>
+                <action android:name="com.donote.action.widget.next"/>
+                <action android:name="com.donote.action.widget.prior"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED"/>
+            </intent-filter>
+            <meta-data 
+                android:name="android.appwidget.provider"
+                android:resource="@xml/donotewidget"/>
+        </receiver>
+        
+        <activity
+            android:name="com.donote.activity.WidgetActivity"
+            android:launchMode="singleTop" >
+        </activity>
+    </application>
+
+</manifest>

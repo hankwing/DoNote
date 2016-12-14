@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#af000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@drawable/slide_menu_topbar" >
+
+        <TextView
+            android:id="@+id/account_name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="hankwing"
+            android:textColor="#affffafa"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/slide_menu_sync"
+            android:layout_width="60dp"
+            android:layout_height="41dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/textview_button"
+            android:scaleType="centerInside"
+            android:src="@drawable/slide_menu_sync" />
+
+        <ImageButton
+            android:id="@+id/slide_menu_set"
+            android:layout_width="60dp"
+            android:layout_height="41dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/textview_button"
+            android:scaleType="centerInside"
+            android:src="@drawable/slide_menu_set" />
+
+        <ProgressBar
+            android:id="@+id/slide_menu_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/slide_menu_batch"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/textview_button"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="@string/batch_processing"
+        android:textColor="#affffafa"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#3f000000" />
+
+    <TextView
+        android:id="@+id/slide_menu_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/textview_button"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="@string/log_off"
+        android:textColor="#affffafa"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#3f000000" />
+
+    <TextView
+        android:id="@+id/slide_menu_tieBaidu"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/textview_button"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="@string/bind_baidu"
+        android:textColor="#affffafa"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/slide_menu_baidu_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_button"
+        android:gravity="center|left"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:text="hankwing"
+        android:textColor="#affffafa"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#3f000000" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/slide_menu_middlebar"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="@string/baidu_cloud"
+        android:textColor="#affffafa"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/slide_menu_baidu_space"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/textview_button"
+        android:drawableLeft="@drawable/slide_menu_used"
+        android:gravity="center|left"
+        android:text="@string/cloud_space_usage"
+        android:textColor="#affffafa"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#3f000000" />
+
+    <TextView
+        android:id="@+id/slide_menu_baidu_upload"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/textview_button"
+        android:drawableLeft="@drawable/slide_menu_upload"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:text="@string/upload_notes_accessory"
+        android:textColor="#affffafa"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/slide_menu_upload_pro"
+        style="@style/ProgressBar_Mini"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#3f000000" />
+
+    <TextView
+        android:id="@+id/slide_menu_baidu_download"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/textview_button"
+        android:drawableLeft="@drawable/slide_menu_download"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:text="@string/download_notes_accessory"
+        android:textColor="#affffafa"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/slide_menu_download_pro"
+        style="@style/ProgressBar_Mini"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:visibility="gone" />
+    
+<!--      <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" >
+
+            <LinearLayout
+                android:id="@+id/interGELinearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <ImageButton
+                android:id="@+id/clear_ad"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#00000000"
+                android:src="@drawable/clear_ad" />
+        </FrameLayout>
+    </RelativeLayout>
+ -->
+</LinearLayout>

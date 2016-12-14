@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#af76BBD8</color>  
+    <color name="white">#3fffffff</color>
+    <color name="alpha">#00000000</color>
+    <color name="black">#3f000000</color>
+    <color name="dark_black">#af000000</color>
+    <color name="popupwindow">#7f404E4D</color>
+    <color name="popupwindow_press">#ff404E4D</color>
+    <color name="light_blue">#7f76BBD8</color>
+    <color name="light_white">#4ffffafa</color>
+    <color name="dark_white">#affffafa</color>
+    <color name="dark_dark_black">#00000000</color>
+    <drawable name="divider">#1f000000</drawable>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/refresh_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/pull_down_to_refresh"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#778899"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/refresh_hint"
+            android:scaleType="fitCenter"
+            android:src="@drawable/refresh_arrow_up" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="30dp"
+            android:layout_toLeftOf="@+id/referesh_linearlayout"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:id="@+id/referesh_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/syncing"
+                android:textColor="#778899"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/refresh_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/sync_last_time"
+                android:textColor="#778899"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

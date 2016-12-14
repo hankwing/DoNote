@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="#ffffffff">
+	
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingLeft="8dp"
+        android:text="@string/set_date"
+        android:textSize="18sp"
+        android:textColor="#4169e1"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:background="#4169e1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingLeft="8dp" />
+   
+        <TextView
+            android:id="@+id/time_date"
+            android:layout_height="40dp"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@drawable/menu_button"
+            android:textColor="#000000"
+            android:text="2013年5月13日"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingLeft="8dp"
+        android:text="@string/set_time"
+        android:textSize="18sp"
+        android:textColor="#4169e1"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:background="#4169e1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingLeft="8dp" />
+    
+    <TextView
+            android:id="@+id/time_time"
+            android:layout_height="40dp"
+            android:layout_width="fill_parent"
+            android:textSize="16sp"
+            android:background="@drawable/menu_button"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="15:30"/>
+        
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/time_confirm"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+           android:background="@drawable/menu_button"
+            android:src="@drawable/ic_content_confirm" />
+        <ImageButton
+            android:id="@+id/time_cancle"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_button"
+            android:src="@drawable/ic_content_cancle" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/define_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:background="@drawable/beijing2"
+    android:focusableInTouchMode="true"
+    tools:context=".CommonEdit" >
+
+   
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="#af76BBD8" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.14" />
+
+        <ImageButton
+            android:id="@+id/edit_return"
+            android:layout_width="37dp"
+            android:layout_height="fill_parent"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:background="@drawable/textview_button"
+            android:src="@drawable/edit_return" />
+
+        <TextView
+            android:id="@+id/catagory_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/edit_return"
+            android:gravity="center"
+            android:background="@drawable/textview_button"
+            android:drawableRight="@drawable/ic_xiala"
+            android:text="@string/default_group"
+            android:textColor="#fffafa"
+            android:textSize="15sp" />
+<!-- 
+        <TextView
+            android:id="@+id/edit_catagory"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/edit_return"
+            android:layout_toRightOf="@+id/catagory_textview"
+            android:drawableBottom="@drawable/ic_xiala" 
+            android:drawablePadding="20dp"/> -->
+
+        <ImageButton
+            android:id="@+id/edit_save"
+            android:layout_width="54dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:background="@drawable/textview_button"
+            android:src="@drawable/ic_save" />
+    </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#00000000"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="@string/hint_title"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:background="#7f006699" />
+
+    <com.donote.freestyle.DefineScroll
+        android:id="@+id/define_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_below="@+id/textView2" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <AbsoluteLayout
+                android:id="@+id/show_note"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:id="@+id/bottom_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="490dp" />
+            </AbsoluteLayout>
+        </LinearLayout>
+    </com.donote.freestyle.DefineScroll>
+
+  <LinearLayout
+      
+        android:id="@+id/linearLayout1"
+        android:layout_width="110dp"
+        android:layout_alignTop="@+id/title"
+        android:layout_height="200dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical" >
+
+         <ListView
+             android:id="@+id/catagory_list"
+             android:layout_width="110dp"
+             android:layout_height="wrap_content"
+             android:divider="#7f4169e1"
+             android:dividerHeight="1px"
+             android:windowCloseOnTouchOutside="true" >
+         </ListView>
+         
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/facepager"
+        android:layout_width="wrap_content"
+        android:layout_height="140dip"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_gravity="center"
+        android:visibility="gone" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#af808080"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/menu_shibie"
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/menu_button"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_shibie" />
+
+        <ImageButton
+            android:id="@+id/menu_shot"
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/menu_button"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_shot" />
+
+        <ImageButton
+            android:id="@+id/menu_face"
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/menu_button"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_face" />
+
+        <ImageButton
+            android:id="@+id/menu_more"
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/menu_button"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_more" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/page_select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/define_scroll"
+        android:layout_alignParentLeft="true"
+        android:background="#4fd3d3d3"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/page0_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/page_focused" />
+
+        <ImageView
+            android:id="@+id/page1_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scaleType="matrix"
+            android:src="@drawable/page_unfocused" />
+
+        <ImageView
+            android:id="@+id/page2_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scaleType="matrix"
+            android:src="@drawable/page_unfocused" />
+    </LinearLayout>
+
+</RelativeLayout>

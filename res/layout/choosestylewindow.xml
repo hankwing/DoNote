@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:orientation="vertical"
+    android:background="#cf404E4D"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/normal_style"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="@string/common_edit"
+        android:textColor="#fffffafa"
+        android:background="@drawable/popupwindow_button" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="120dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="#fffffafa" />
+
+    <Button
+        android:id="@+id/define_style"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="@string/free_edit"
+        android:textColor="#ffffffff"
+        android:background="@drawable/popupwindow_button" />
+    
+</LinearLayout>

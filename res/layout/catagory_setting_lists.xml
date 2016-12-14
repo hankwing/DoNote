@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#cf404E4D"
+    android:orientation="vertical" >    
+    <TextView    
+        android:textSize="15dp"
+        android:text="#ddddd"
+        android:textColor="#fffffafa"
+        android:background="@drawable/popupwindow_button"
+        android:gravity="center"
+        android:layout_height="37dp"   
+        android:layout_width="fill_parent"    
+        android:id="@+id/item2" />   
+
+</LinearLayout>

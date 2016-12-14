@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alarm_dialog"
+    android:layout_width="300dp"
+    android:layout_height="370dp" 
+    android:windowCloseOnTouchOutside = "false">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#af76BBD8" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="20dp"
+            android:gravity="center|left"
+            android:text="@string/logo"
+            android:textColor="#fffafa"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/alarm_exit"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="21dp"
+            android:src="@drawable/ic_exit" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/alarm_title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#ffffff"
+        android:ems="10"
+        android:textColor="#000000"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/alarm_title"
+        android:background="#af76BBD8" />
+
+    <TextView
+        android:id="@+id/alarm_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:background="#ffffff"
+        android:ems="10"
+        android:gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#000000" />
+
+</RelativeLayout>

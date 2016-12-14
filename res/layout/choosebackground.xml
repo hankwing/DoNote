@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/choosebackground"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/default_background"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/return_to_default_background"
+        android:background="#ffffff" />
+
+    <Button
+        android:id="@+id/diy_background"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/choose_from_album"
+        android:background="#ffffff" />
+    
+</LinearLayout>

@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/beijing2"
+    tools:context=".CommonEdit"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="#af76BBD8" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.14" />
+
+        <ImageButton
+            android:id="@+id/edit_return"
+            android:layout_width="37dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/textview_button"
+            android:scaleType="centerInside"
+            android:src="@drawable/edit_return" />
+
+        <TextView
+            android:id="@+id/catagory_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/edit_return"
+            android:background="@drawable/textview_button"
+            android:drawableRight="@drawable/ic_xiala"
+            android:gravity="center"
+            android:text="默认笔记本"
+            android:textColor="#fffafa"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/edit_save"
+            android:layout_width="54dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/textview_button"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_save" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/title"
+        style="@style/normalText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:autoLink="email|phone|web"
+        android:background="#00000000"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="@string/hint_title"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/body"
+        style="@style/normalText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:autoLink="email|phone|web"
+        android:background="#00000000"
+        android:ems="10"
+        android:gravity="top"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:scrollbars="vertical" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:background="#7f006699" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="110dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/title"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/catagory_list"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:divider="#7f4169e1"
+            android:dividerHeight="1px"
+            android:windowCloseOnTouchOutside="true" >
+        </ListView>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/facepager"
+        android:layout_width="wrap_content"
+        android:layout_height="140dip"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_gravity="center"
+        android:visibility="gone" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#cccccc"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/edit_button_back"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#af808080"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/menu_record"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@drawable/menu_button"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_record" />
+
+            <ImageButton
+                android:id="@+id/menu_photo"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="@drawable/menu_button"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_shot" />
+
+            <ImageButton
+                android:id="@+id/menu_face"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/menu_button"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_face" />
+
+            <ImageButton
+                android:id="@+id/menu_more"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/menu_button"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_more" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/page_select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/body"
+        android:layout_alignParentLeft="true"
+        android:background="#ddd"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/page0_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/page_focused" />
+
+        <ImageView
+            android:id="@+id/page1_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scaleType="matrix"
+            android:src="@drawable/page_unfocused" />
+
+        <ImageView
+            android:id="@+id/page2_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scaleType="matrix"
+            android:src="@drawable/page_unfocused" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout1"
+        android:orientation="vertical" >
+
+        <com.donote.util.GesView
+            android:id="@+id/ges_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

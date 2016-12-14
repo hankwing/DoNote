@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:background="#3fffffff"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/noteicon"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:focusable="false"
+            android:scaleType="center"
+            android:src="@drawable/ic_note" />
+
+        <TextView
+            android:id="@+id/text1"
+            style="@style/normalText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="49dp"
+            android:maxWidth="200dp"
+            android:paddingLeft="3dp"
+            android:singleLine="true"
+            android:text="第一组第一项" />
+
+        <com.donote.util.MyImageButton
+            android:id="@+id/fast_view_button"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/menu_button"
+            android:scaleType="fitCenter"
+            android:focusable="false"
+            android:src="@drawable/ic_expend" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            style="@style/MyCheckBox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:layout_alignLeft="@+id/fast_view_button"
+            android:layout_alignParentBottom="true"
+            android:background="#00000000"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="3dp"
+            android:text="93/3/21"
+            android:textColor="#4169e1" />
+
+        <TextView
+            android:id="@+id/note_item_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_toRightOf="@+id/noteicon"
+            android:layout_alignLeft="@+id/text1"
+            android:maxLines="2"
+            android:paddingRight="6dp"
+            android:layout_toLeftOf="@+id/fast_view_button"
+            android:paddingTop="3dp"
+            android:paddingLeft="3dp"
+            android:text="这是徐梦雪的生日，我感到非常高兴dddddddddddddddddddddddddddddddddddddddd"
+            android:textColor="#778899" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#7f666666"
+            android:layout_marginBottom="-45dp"
+            android:focusable="true"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/fast_view_modify"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:background="@drawable/textview_button"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_fast_view_modify" />
+
+            <ImageButton
+                android:id="@+id/fast_view_alarm_set"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:background="@drawable/textview_button"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_alarm" />
+
+            <ImageButton
+                android:id="@+id/fast_view_alarm_manager"
+                android:layout_width="50dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_button"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_alarm_manager" />
+
+            <ImageButton
+                android:id="@+id/fast_view_delete"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:background="@drawable/textview_button"
+                android:focusable="false"
+                android:focusableInTouchMode="false" 
+                android:src="@drawable/ic_fast_view_delete" />
+
+            <ImageButton
+                android:id="@+id/fast_view_share"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:background="@drawable/textview_button"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_fast_view_share" />
+
+            <ImageButton
+                android:id="@+id/fast_view_lock_or_unlock"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:background="@drawable/textview_button"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_fast_view_lock_or_unlock" />
+
+            <ImageButton
+                android:id="@+id/fast_view_moveto"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:background="@drawable/textview_button"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_fast_view_moveto" />
+        </LinearLayout>
+
+</LinearLayout>

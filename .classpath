@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="libs/huawei_imax_sdk_android.jar"/>
+	<classpathentry kind="lib" path="libs/locSDK_3.3.jar"/>
+	<classpathentry kind="lib" path="libs/Msc_green_mood.jar"/>
+	<classpathentry kind="lib" path="libs/Android_SDK_component.jar"/>
+	<classpathentry kind="lib" path="libs/commons-httpclient-3.0.1.jar"/>
+	<classpathentry kind="lib" path="libs/Android_SDK.jar"/>
+	<classpathentry kind="lib" path="libs/Baidu-OAuth-SDK-Android-G-2.0.0.jar"/>
+	<classpathentry kind="lib" path="libs/Baidu-PCS-SDK-Android-L2-2.1.0.jar"/>
+	<classpathentry kind="lib" path="libs/httpmime-4.2.jar"/>
+	<classpathentry kind="lib" path="libs/baidu-android-openapi-sdk.jar"/>
+	<classpathentry kind="lib" path="libs/android_api.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="libs/weiboSDK2.1_130712.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

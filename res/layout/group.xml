@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+        android:background="#7fffffff">
+
+    <ImageView
+        android:id="@+id/groupIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_browser" />
+
+    <TextView
+        android:id="@+id/groupto"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="0.03"
+        android:maxLength="17"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="NO DATA FOUNDddddddddddddddddddd"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/notecount"
+        android:layout_width="48dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textSize="15sp" />  
+</LinearLayout>
